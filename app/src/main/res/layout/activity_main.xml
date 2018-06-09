@@ -1,0 +1,425 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context="com.example.android.myquiz.MainActivity">
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            tools:context="com.example.android.myquiz.MainActivity">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/black"
+                android:gravity="center"
+                android:text="Learn About the Korean Flag"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:padding="16dp"
+            tools:context="com.example.android.myquiz.MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:text="The Flag of South Korea"
+                android:textColor="#FF327CA3"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:text="The flag of South Korea, also known as the Taegukgi (also spelled as Taegeukgi, literally has three parts: a white rectangular background, a red and blue Taeguk, symbolizing balance, in its center, and four black trigrams selected from the original eight, one toward each corner."
+                android:textSize="14sp"></TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/skoreanflag"
+                android:scaleType="centerCrop">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="#FFFFFF"
+                android:text="Symbolism"
+                android:textColor="#FF327CA3"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:background="#FFFFFF"
+                android:text="The flag's background is white, a traditional color in Korean culture. White was common in the daily attire of 19th-century Koreans, and it still appears in contemporary versions of traditional Korean garments, such as the hanbok. The color represents peace and purity.
+
+The circle in the middle is derived from the philosophy of um-yang (yin-yang in Chinese) and represents balance in the universe. The red half represents positive cosmic forces, and the blue half represents the opposing negative cosmic forces.
+
+Together, the trigrams represent movement and harmony as fundamental principles. Each trigram (hangeul: 괘 [gwae]; hanja: 卦) represents one of the four classical elements,[2] as described below:"
+                android:textSize="14sp"></TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/koreanflagtrigrams"
+                android:scaleType="centerCrop">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:text="How much do you know about the Korean Flag?!"
+                android:textColor="#FFCF5707"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="What country does this flag belong to?"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/skoreanflagsmall"
+                android:scaleType="centerCrop">
+
+            </ImageView>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/choice1_question1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="North Korea" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/choice2_question1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="China" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/choice3_question1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="Japan" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/choice4_question1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="South Korea" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="What does this Trigram represent in the celestial body?"
+                android:textSize="16sp"></TextView>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/trigramgeon"
+                android:scaleType="centerCrop"></ImageView>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/choice1_question2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="Mars" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/choice2_question2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="Heaven" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/choice3_question2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="Summer" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/choice4_question2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="Geon" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="What does this Trigram represent in the seasons?"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ri"
+                android:scaleType="centerCrop"></ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/choice1_question3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="Sun" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/choice2_question3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="Earth" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/choice3_question3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="Autumn" />
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/choice4_question3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="Ri" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="What does the Red part of the center circle mean?"
+                android:textSize="16sp">
+
+            </TextView>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/choice1_question4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="Positive Cosmic Forces" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/choice2_question4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="Heaven" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/choice3_question4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="Sun" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/choice4_question4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="Spring" />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Is Taegukgi a Korean word for Flag?"
+                android:textSize="16sp">
+
+            </TextView>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/choice1_question5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="Yes" />
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/choice2_question5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="24dp"
+                    android:text="No" />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="What does the bottom Blue part of the center circle mean?"
+                android:textSize="16sp">
+
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/answer_to_question6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:background="#FFFFFF"
+                android:hint="Type your answer here"
+                android:inputType="text" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:backgroundTint="#dcdcdc"
+                    android:gravity="center"
+                    android:onClick="Done"
+                    android:text="Done"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
